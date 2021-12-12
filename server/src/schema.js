@@ -36,5 +36,16 @@ const typeDefs = gql`
     "Fetch a specific track, provided a track's ID"
     track(id: ID!): Track
   }
+
+  type IncrementTrackViewsResponse {
+    code: Int!
+    success: Boolean!
+    message: String!
+    track: Track
+  }
+
+  type Mutation{
+    incrementTrackViews(id: ID!): IncrementTrackViewsResponse!
+  }
 `;
 module.exports = typeDefs;
