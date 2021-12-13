@@ -4,14 +4,15 @@
   "description": "Based on Apollo Odyssey course lessons [Apollo's learning platform](https://odyssey.apollographql.com/lift-off-part1)",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/src/index.js",
+    "start": "node server/src",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emilcheva/react-graphql-apollo.git"
   },
-  "author": "",
+  "author": "emilcheva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/emilcheva/react-graphql-apollo/issues"
