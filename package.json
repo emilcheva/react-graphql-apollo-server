@@ -4,7 +4,6 @@
   "description": "back-end demo app for Apollo's lift-off course",
   "scripts": {
     "start": "node server",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
