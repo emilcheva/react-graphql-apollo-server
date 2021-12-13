@@ -20,7 +20,9 @@ const typeDefs = gql`
     "The Module's title"
     title: String!
     "The Module's length in minutes"
-    length: Int
+    length: Int,
+    videoUrl: String,
+    content: String
   }
 
   "Author of a complete Track or a Module"
@@ -35,6 +37,8 @@ const typeDefs = gql`
     tracksForHome: [Track!]!
     "Fetch a specific track, provided a track's ID"
     track(id: ID!): Track
+    "Get module, provided by a module's ID"
+    module(id: ID!): Module
   }
 
   type IncrementTrackViewsResponse {
