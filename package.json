@@ -1,12 +1,20 @@
 {
   "name": "react-graphql-apollo",
   "version": "1.0.0",
-  "description": "Based on Apollo Odyssey course lessons [Apollo's learning platform](https://odyssey.apollographql.com/lift-off-part1)",
-  "main": "index.js",
+  "description": "back-end demo app for Apollo's lift-off course",
   "scripts": {
-    "start": "node server/src",
+    "start": "node server",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^3.4.0",
+    "apollo-server": "^3.5.0",
+    "graphql": "^15.7.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
   },
   "repository": {
     "type": "git",

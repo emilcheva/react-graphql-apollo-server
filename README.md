@@ -10,7 +10,6 @@ There are 2 main folders:
 
 To get started:
 
-1. Navigate to the `server` folder.
 1. Run `npm install`.
 1. Run `npm start`.
 
